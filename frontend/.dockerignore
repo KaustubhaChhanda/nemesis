@@ -1,0 +1,43 @@
+# Frontend .dockerignore
+# Prevents unnecessary files from being sent to the Docker build context
+
+# Dependencies (installed during build)
+node_modules/
+.pnpm-store/
+
+# Build output (generated during build)
+dist/
+dist-ssr/
+
+# Vite cache
+.vite/
+
+# Environment secrets
+.env
+.env.local
+.env.*.local
+*.local
+
+# IDE and editor
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Git
+.git/
+.gitignore
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Test
+coverage/
+.nyc_output/

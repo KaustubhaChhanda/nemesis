@@ -1,0 +1,13 @@
+SocksPort 0.0.0.0:9050
+SocksPolicy accept *
+
+HiddenServiceDir /var/lib/tor/forum_service/
+HiddenServicePort 80 forum:5000
+
+HiddenServiceDir /var/lib/tor/market_service/
+HiddenServicePort 80 market:5000
+
+HiddenServiceDir /var/lib/tor/paste_service/
+HiddenServicePort 80 paste:5000
+
+Log notice stdout

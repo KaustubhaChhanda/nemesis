@@ -1,0 +1,54 @@
+# Backend .dockerignore
+# Prevents unnecessary files from being sent to the Docker build context
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyc
+*.pyo
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Test and debug scripts
+test_*.py
+verify_*.py
+wipe.py
+prune_*.py
+update_*.py
+reset_db.py
+clear_db.py
+scratch_*.py
+
+# Environment secrets
+.env
+.env.local
+*.key
+*.pem
+*.secret
+
+# Storage volumes (mounted at runtime)
+storage/
+
+# IDE and editor
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Git
+.git/
+.gitignore
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/

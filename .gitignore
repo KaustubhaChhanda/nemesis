@@ -1,0 +1,133 @@
+# =====================================================================
+# Nemesis - Dark Web Intelligence Platform
+# .gitignore
+# =====================================================================
+
+# ── Secrets & Environment ──────────────────────────────────────────
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+*.secret
+*.p12
+*.pfx
+# Allow the example file
+!.env.example
+
+# ── Python ─────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+nosetests.xml
+coverage.xml
+*.cover
+
+# Scratch/debug scripts (keep in local only)
+test_*.py
+verify_*.py
+wipe.py
+prune_*.py
+update_*.py
+reset_db.py
+clear_db.py
+scratch_*.py
+
+# ── Virtual Environments ───────────────────────────────────────────
+venv/
+.venv/
+env/
+ENV/
+.python-version
+
+# ── Node.js & Frontend ─────────────────────────────────────────────
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+.vite/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.npm
+.pnpm-store/
+
+# ── Docker Volumes & Persisted Data ───────────────────────────────
+pgdata/
+neo4jdata/
+tordata/
+*.sock
+storage/
+backend/storage/
+
+# ── Tor Hidden Service Keys (sensitive) ───────────────────────────
+hs_ed25519_secret_key
+hs_ed25519_public_key
+onion-services/*/hs_ed25519_secret_key
+onion-services/*/hs_ed25519_public_key
+onion-services/*/hostname
+
+# ── IDE & Editor ──────────────────────────────────────────────────
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# ── Operating System ──────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ── Logs & Databases ──────────────────────────────────────────────
+*.log
+*.sqlite3
+*.db
+logs/
+
+# ── Compiled Assets ───────────────────────────────────────────────
+*.pyc
+*.pyo
+dist/
+
+# ── Misc ──────────────────────────────────────────────────────────
+.cache/
+tmp/
+temp/
+*.tmp
+*.bak
+*.orig

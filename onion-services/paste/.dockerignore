@@ -1,0 +1,12 @@
+﻿__pycache__/
+*.py[cod]
+*.pyc
+.env
+.DS_Store
+Thumbs.db
+*.log
+.git/
+.gitignore
+hs_ed25519_secret_key
+hs_ed25519_public_key
+hostname
